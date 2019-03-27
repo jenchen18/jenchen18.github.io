@@ -1,1 +1,82 @@
-"Hello World" 
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div><p><br></p></div>
+
+<div class="parallax" style="background-image: url('../images/slideshow/picture1.jpg');"></div>
+
+<div class="center">
+    <h1>1 Club. 2 Teams. 6 Division I National Championships.</h1>
+
+    <h3> 2000 | 2003 | 2005 | 2006 | 2015 | 2018 </h3>
+
+    <p class="body-content">
+        UTWVC is a University of Texas at Austin RecSports affiliated volleyball club with the mission
+        of winning national championships. We are a student run organization that is committed to
+        excellence by providing great competition to all other universities across the nation. Our goal
+        is to enhance the college experience of each member through volleyball engagement.  We hire
+        coaches from around the Austin area who are dedicated to helping us achieve a continued high
+        level of competition. <br> <i>Sponsored by UT Rec Sports | NCVF-SIVA</i>
+    </p>
+</div>
+
+<hr />
+
+<h2>Recent News</h2>
+<div class="row">
+    <div class="column-two">
+        <div class="center">
+            <h3 class="orange">Texas Defeats Texas A&M to Win National Championship</h3>
+            <img src="~/images/nationals-article.jpg" class="two-column-images" />
+        </div>
+        <p class="column-text">
+            San Diego State captured the NCVF Collegiate Club Volleyball Championship in Men’s
+            Division I title on Saturday night, while Texas A claimed the Women’s Division I
+            title in St. Louis, Missouri, on the final day of the competition.<br>A total of
+            456 teams competed in the three-day event, which is divided into divisions based
+            on enrollment... <a href="https://www.teamusa.org/USA-Volleyball/Features/2018/April/14/San-Diego-State-Texas-Win-Top-NCVF-Crowns">Read More</a>
+        </p>
+    </div>
+    <div class="column-two">
+        <div class="center">
+            <h3 class="orange">Women's Club Volleyball Among Club Sports to Light Tower Orange</h3>
+            <img src="~/images/tower-article.jpg" class="two-column-images" />
+        </div>
+        <p class="column-text">
+            The UT Tower shined orange on Tuesday, May 8 in celebration of National Championship
+            titles earned by four Sport Cubs.<br>Congratulations to Longhorn Powerlifting, UT
+            Fencing Club, UT Women's Volleyball Club, and Texas TaeKwonDo...
+            <a href="https://www.utrecsports.org/news-events/news/tower-shines-for-sport-clubs">Read More</a>
+        </p>
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="center">
+        <div class="column-three">
+            <a asp-page="/About">
+                <img class="pagePics" src="~/images/about-pic.jpg" />
+                <h3 class="orange">About UTWVC</h3>
+            </a>
+            <p body-content>Learn more about our organization and info for tryouts!</p>
+        </div>
+        <div class="column-three">
+            <a asp-page="/Roster">
+                <img class="pagePics" src="~/images/meet-team-pic.jpg" />
+                <h3 class="orange">Meet UTWVC</h3>
+            </a>
+            <p body-content>Meet our players, officers, and coaches.</p>
+        </div>
+        <div class="column-three">
+            <a asp-page="/Contact">
+                <img class="pagePics" src="~/images/contact-pic.jpg" />
+                <h3 class="orange">Contact UTWVC</h3>
+            </a>
+            <p body-content>Have questions? Reach out to us!</p>
+        </div>
+    </div>
+</div>
